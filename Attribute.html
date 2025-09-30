@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTRIBUTE SELECTORS</title>
+
+    <style>
+
+        a{
+            color: aqua;
+        }
+        a[target]{
+            font-size: x-large;
+        }
+        a[target="_blank"]{
+            text-decoration: none;
+        }
+        a[title~="pro"]{
+            font-size: 50px;
+        }
+        a[title~="bd"]{
+            color: black;
+        }
+        div[id|="child"]{
+            height: 300px;
+            width: 300px;
+            background-color: blueviolet;
+            margin-top: 4px; 
+        }
+        div[id^="child"]{
+            height: 300px;
+            width: 300px;
+            background-color:#27ae60 ;
+            margin-bottom: 4px;
+        }
+        div[id$="zero"]{
+            background-color: cadetblue;
+        }
+        div[id*="k"]{
+            background-color:#34495e ;
+        }
+
+
+    </style>
+</head>
+<body>
+    <a href="" title="pro coder bd">hello</a>
+    <a href="#" target="_blank">hello</a>
+    <a href="">hello</a>
+    <a href="" title="pro code bd">hello</a>
+    <a href="" title="pro coder">hello</a>
+    <a href="" target="_self">hello</a>
+    <a href="">hello</a>
+    <a href="">hello</a>
+    <a href="" title="pro coder">hello</a>
+    <a href="" target="_self">hello</a>
+     <a href="#" target="_blank">hello</a>
+     <a href="" title="pro coder bd">hello</a>
+     <a href="" title="pro coder">hello</a>
+    <a href="">hello</a>
+    <a href="" title="pro coder">hello</a>
+    <a href="" title="pro coder">hello</a>
+    <a href="" title="pro coder">hello</a>
+     <a href="#" target="_blank">hello</a>
+    <a href="">hello</a>
+
+    <div id="main">
+        <div id="child-twozero">1</div>
+        <div id="child_tokwo">2</div>
+    </div>
+    <div id="main">
+        <div id="child-onezerok">3</div>
+        <div id="child_onezero">4</div>
+        <div id="child_niokne">5</div>
+    </div>
+
+</body>
+</html>
