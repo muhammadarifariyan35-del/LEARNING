@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pro_small-Photoroom.png" type="image/x-icon">
+    <title>প্রথম আলো | বাংলা নিউজ পেপার</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+             font-family: "Poppins", sans-serif;
+             margin: 0;
+
+        }
+        
+        /* header area */
+        .header_area{
+            padding: 15px 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        
+       /* navigation area*/
+        .nav_area ul{
+            margin:10px 5px ;
+            padding: 3px 0;
+            padding-bottom: 6px;
+            list-style: none;
+            border-bottom: 2px solid #ddd;
+            text-align: center;
+            
+            
+        }
+        .nav_area ul li{
+            display: inline-block;
+            padding: 0 9px;
+
+            
+            
+        }
+        .nav_area ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: large;
+            font-weight: 700;
+            
+        }
+        .nav_area ul li a:hover{
+            color: brown;
+        }
+
+
+        /* content area */
+        
+        .content{
+            border-bottom: 2px solid #ddd ;
+            width: 95%;
+            margin: 20px;
+            display: flex;
+            
+        }
+        .main_content{
+            width: 60%;
+            display: grid;
+            grid-template-columns: auto auto;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+            
+            
+        }
+        .child_content{
+            border-radius: 10px;
+            margin: 5px;
+            background-color: #ddd;
+        }
+        .child_content img{
+            width:100% ;
+            border-radius: 10px;
+
+        }
+        .child_content h2 a{
+            text-decoration: none;
+            color: black;
+            margin: 5px;
+            display: inline-block;
+        }
+        .child_content p{
+            margin: 5px;
+            display: inline-block;
+        }
+
+
+
+        .main_side_var{
+            margin: 10px;
+            margin-left: 65px;
+            border-left: 2px solid #ddd;
+            width:25% ;
+        }
+        .child_side_var{
+            margin: 5px;
+            margin-left: 15px;
+            background-color: #ddd;
+            border-radius: 10px;
+        }
+        .child_side_var img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .child_side_var h3 a{
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            margin: 5px;
+        }
+
+
+
+        
+
+        /* footer area*/
+        .footer_area{
+            padding: 15px 0;
+            text-align:center;
+            
+            
+        }
+        
+
+
+        /* prothom_alo */
+
+        @media screen and (max-width:420px) {
+        .nav_area ul li{
+            display: inline-block;
+            padding: 0 9px 15px;
+        }
+        .body{
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+            width: 96%;
+            display:block ;
+            border-bottom: 0px;
+            margin: 20px auto;
+            
+        }
+        .main_content{
+            width: 100%;
+            margin-bottom: 0px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            
+        }
+        .child_content{
+            margin: 5px 0px;
+            flex-basis: 100%;
+            
+            margin: 5px 0px;
+            background-color: #ddd;
+        }
+        .child_content img{
+            width:100% ;
+            border-radius: 10px;
+
+        }
+        .child_content h2 a{
+            text-decoration: none;
+            color: black;
+            margin: 5px;
+            display: inline-block;
+        }
+        .main_side_var{
+            width: 100%;
+            border: 0px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0px;
+            margin-left: 0px;
+            
+        }
+        .child_side_var{
+            flex-basis: 100%;
+            margin: 5px 0px;
+            background-color: #ddd;
+        }
+
+    }
+        
+
+       
+
+        
+    </style>
+</head>
+<body>
+    <!-- header are -->
+    <header class="header_area">
+        <a href=""><img src="prothom-alo-seeklogo.png" alt="" width="250px"></a>
+    </header>
+    <!-- navigation are -->
+    <nav class="nav_area">
+        <ul>
+            <li><a href="">বিশেষ সংবাদ</a></li>
+            <li><a href="">রাজনীতি</a></li>
+            <li><a href="">বাংলাদেশ</a></li>
+            <li><a href="">অপরাধ</a></li>
+            <li><a href="">বিশ্ব</a></li>
+            <li><a href="">বানিজ্য</a></li>
+            <li><a href="">মতামত</a></li>
+            <li><a href="">খেলা</a></li>
+            <li><a href="">বিনোদন</a> </li>
+            <li><a href="">চাকরি</a></li>
+            <li><a href="">জীবনযাপন</a></li>
+            
+        </ul>
+    </nav>
+    <!-- content are -->
+     <section class="content">
+        <div class="main_content">
+             <div class="child_content">
+                
+                <img src="img/ncp.avif" alt="">
+                
+                <h2><a href="">বিএনপি ও জামায়াতের টানাপোড়েনে এনসিপির ভাবনায় নতুন মোর্চা</a></h2>
+                
+                <p>পথচলার শুরুতেই কোনো বড় দল বা মতের ‘ট্যাগ’ গায়ে লাগাতে চায় না এনসিপি। এ জন্য পৃথক মোর্চার কথা ভাবছে তারা।</p>
+                
+            </div>
+             <div class="child_content">
+                
+                <img src="img/ncp.avif" alt="">
+                
+                <h2><a href="">বিএনপি ও জামায়াতের টানাপোড়েনে এনসিপির ভাবনায় নতুন মোর্চা</a></h2>
+                
+                <p>পথচলার শুরুতেই কোনো বড় দল বা মতের ‘ট্যাগ’ গায়ে লাগাতে চায় না এনসিপি। এ জন্য পৃথক মোর্চার কথা ভাবছে তারা।</p>
+                
+            </div>
+             <div class="child_content">
+                
+                <img src="img/ncp.avif" alt="">
+                
+                <h2><a href="">বিএনপি ও জামায়াতের টানাপোড়েনে এনসিপির ভাবনায় নতুন মোর্চা</a></h2>
+                
+                <p>পথচলার শুরুতেই কোনো বড় দল বা মতের ‘ট্যাগ’ গায়ে লাগাতে চায় না এনসিপি। এ জন্য পৃথক মোর্চার কথা ভাবছে তারা।</p>
+                
+            </div>
+             <div class="child_content">
+                
+                <img src="img/ncp.avif" alt="">
+                
+                <h2><a href="">বিএনপি ও জামায়াতের টানাপোড়েনে এনসিপির ভাবনায় নতুন মোর্চা</a></h2>
+                
+                <p>পথচলার শুরুতেই কোনো বড় দল বা মতের ‘ট্যাগ’ গায়ে লাগাতে চায় না এনসিপি। এ জন্য পৃথক মোর্চার কথা ভাবছে তারা।</p>
+                
+            </div>
+            <div class="child_content">
+                
+                <img src="img/ncp.avif" alt="">
+                
+                <h2><a href="">বিএনপি ও জামায়াতের টানাপোড়েনে এনসিপির ভাবনায় নতুন মোর্চা</a></h2>
+                
+                <p>পথচলার শুরুতেই কোনো বড় দল বা মতের ‘ট্যাগ’ গায়ে লাগাতে চায় না এনসিপি। এ জন্য পৃথক মোর্চার কথা ভাবছে তারা।</p>
+                
+            </div>
+            <div class="child_content">
+                
+                <img src="img/ncp.avif" alt="">
+                
+                <h2><a href="">বিএনপি ও জামায়াতের টানাপোড়েনে এনসিপির ভাবনায় নতুন মোর্চা</a></h2>
+                
+                <p>পথচলার শুরুতেই কোনো বড় দল বা মতের ‘ট্যাগ’ গায়ে লাগাতে চায় না এনসিপি। এ জন্য পৃথক মোর্চার কথা ভাবছে তারা।</p>
+                
+            </div>
+            <div class="child_content">
+                
+                <img src="img/ncp.avif" alt="">
+                
+                <h2><a href="">বিএনপি ও জামায়াতের টানাপোড়েনে এনসিপির ভাবনায় নতুন মোর্চা</a></h2>
+                
+                <p>পথচলার শুরুতেই কোনো বড় দল বা মতের ‘ট্যাগ’ গায়ে লাগাতে চায় না এনসিপি। এ জন্য পৃথক মোর্চার কথা ভাবছে তারা।</p>
+                
+            </div>
+            <div class="child_content">
+                
+                <img src="img/ncp.avif" alt="">
+                
+                <h2><a href="">বিএনপি ও জামায়াতের টানাপোড়েনে এনসিপির ভাবনায় নতুন মোর্চা</a></h2>
+                
+                <p>পথচলার শুরুতেই কোনো বড় দল বা মতের ‘ট্যাগ’ গায়ে লাগাতে চায় না এনসিপি। এ জন্য পৃথক মোর্চার কথা ভাবছে তারা।</p>
+                
+            </div>
+            <div class="child_content">
+                
+                <img src="img/ncp.avif" alt="">
+                
+                <h2><a href="">বিএনপি ও জামায়াতের টানাপোড়েনে এনসিপির ভাবনায় নতুন মোর্চা</a></h2>
+                
+                <p>পথচলার শুরুতেই কোনো বড় দল বা মতের ‘ট্যাগ’ গায়ে লাগাতে চায় না এনসিপি। এ জন্য পৃথক মোর্চার কথা ভাবছে তারা।</p>
+                
+            </div>
+            <div class="child_content">
+                
+                <img src="img/ncp.avif" alt="">
+                
+                <h2><a href="">বিএনপি ও জামায়াতের টানাপোড়েনে এনসিপির ভাবনায় নতুন মোর্চা</a></h2>
+                
+                <p>পথচলার শুরুতেই কোনো বড় দল বা মতের ‘ট্যাগ’ গায়ে লাগাতে চায় না এনসিপি। এ জন্য পৃথক মোর্চার কথা ভাবছে তারা।</p>
+                
+            </div>
+            <div class="child_content">
+                
+                <img src="img/ncp.avif" alt="">
+                
+                <h2><a href="">বিএনপি ও জামায়াতের টানাপোড়েনে এনসিপির ভাবনায় নতুন মোর্চা</a></h2>
+                
+                <p>পথচলার শুরুতেই কোনো বড় দল বা মতের ‘ট্যাগ’ গায়ে লাগাতে চায় না এনসিপি। এ জন্য পৃথক মোর্চার কথা ভাবছে তারা।</p>
+                
+            </div>
+            <div class="child_content">
+                
+                <img src="img/ncp.avif" alt="">
+                
+                <h2><a href="">বিএনপি ও জামায়াতের টানাপোড়েনে এনসিপির ভাবনায় নতুন মোর্চা</a></h2>
+                
+                <p>পথচলার শুরুতেই কোনো বড় দল বা মতের ‘ট্যাগ’ গায়ে লাগাতে চায় না এনসিপি। এ জন্য পৃথক মোর্চার কথা ভাবছে তারা।</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="main_side_var">
+            <div class="child_side_var">
+
+                <a href=""><img src="img/pa.avif" alt=""></a>
+
+                <h3><a href="">নিউইয়র্কে বাতিল হচ্ছে কলম্বিয়ার প্রেসিডেন্টের মার্কিন ভিসা</a></h3>
+
+            </div>
+            <div class="child_side_var">
+
+                <a href=""><img src="img/pa.avif" alt=""></a>
+
+                <h3><a href="">নিউইয়র্কে বাতিল হচ্ছে কলম্বিয়ার প্রেসিডেন্টের মার্কিন ভিসা</a></h3>
+
+            </div>
+            <div class="child_side_var">
+
+                <a href=""><img src="img/pa.avif" alt=""></a>
+
+                <h3><a href="">নিউইয়র্কে বাতিল হচ্ছে কলম্বিয়ার প্রেসিডেন্টের মার্কিন ভিসা</a></h3>
+
+            </div>
+            <div class="child_side_var">
+
+                <a href=""><img src="img/pa.avif" alt=""></a>
+
+                <h3><a href="">নিউইয়র্কে বাতিল হচ্ছে কলম্বিয়ার প্রেসিডেন্টের মার্কিন ভিসা</a></h3>
+
+            </div>
+            <div class="child_side_var">
+
+                <a href=""><img src="img/pa.avif" alt=""></a>
+
+                <h3><a href="">নিউইয়র্কে বাতিল হচ্ছে কলম্বিয়ার প্রেসিডেন্টের মার্কিন ভিসা</a></h3>
+
+            </div>
+            <div class="child_side_var">
+
+                <a href=""><img src="img/pa.avif" alt=""></a>
+
+                <h3><a href="">নিউইয়র্কে বাতিল হচ্ছে কলম্বিয়ার প্রেসিডেন্টের মার্কিন ভিসা</a></h3>
+
+            </div>
+            <div class="child_side_var">
+
+                <a href=""><img src="img/pa.avif" alt=""></a>
+
+                <h3><a href="">নিউইয়র্কে বাতিল হচ্ছে কলম্বিয়ার প্রেসিডেন্টের মার্কিন ভিসা</a></h3>
+
+            </div>
+            
+           
+            
+            
+            
+        </div>
+     </section>
+     <footer class="footer_area">
+        <a href=""><img src="prothom-alo-seeklogo.png" alt="" width="200px"></a>
+     </footer>
+</body>
+</html>
