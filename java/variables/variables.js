@@ -30,12 +30,36 @@ a = 16;
 let people = 'some one'
 console.log(people);
  
-/* 
-* you can not re declare
-* you can not assaign
-*
-*/
+const one = 'arif'
+console.log(one);
 
-const c = 19
 
-console.log(a);
+var banana = 'kola'
+var  banana = 'lemon'
+
+{
+    banana = "dhaka"
+    
+}
+console.log(banana);
+var angur = 'appole'
+console.log(angur);
+
+let my = 'amar'
+
+
+const k = 15;
+console.log(k);
+{
+    const l = 21;
+    console.log(l);
+}
+
+
+const hello = {
+    amar_name: 'arif ariyan',
+    age: 20,
+}
+hello.jela = 'mymensingh';
+hello.age = 32;
+console.log(hello);
