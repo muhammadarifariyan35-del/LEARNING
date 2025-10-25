@@ -22,32 +22,28 @@
 
         }
         .parent{
-         width: 95%;
-         background-color: #40407a50;
-         margin: auto;
-         border: 5px solid #40407a30;
-         display: flex;
-        flex-flow: row wrap;
-        justify-content:space-evenly ;
-        
-         
+        height: 2000px;
+        background-color: var(--sec);
+        padding: 2px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: ;
+        align-content: start;
+        justify-content: center;
+        gap: 6px;
          
         }
         .child{
-            background-color:var(--sec);
-            
-            
-            text-align: left;
-            margin: 15px auto;
-            padding: 15px 25px;
-            box-sizing: border-box;
-            border-radius: 10px;
-            flex-basis: 30%;
-            margin: 3px;
-            
-            
+        height: 250px;
+        background-color:rgb(2, 82, 84); 
+        flex-basis: 25%;
+        padding: 10px;
+        border-radius: 20px;
+        gap: 1px;
+
         
         }
+
         h3{
             color:#ccae62 ;
         }
